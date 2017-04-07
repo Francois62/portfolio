@@ -28,8 +28,8 @@
   					<button class="menu-icon" type="button" data-responsive-toggle="mobile-dropdown"></button>
   				</div>
   				<div class="s-mobile-menu-wrapper dropdown-pane" id="mobile-dropdown" data-dropdown data-close-on-click="true">
-  					<ul class="vertical menu">
-              <li > <a href="#portfolio" class=" font js-scrollTo">Projets</a></li>
+  					<ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+              <li> <a href="#portfolio" class=" font js-scrollTo">Projets</a></li>
               <li> <a href="#comp" class=" font js-scrollTo">Compétences</a></li>
               <li> <a href="#about" class=" font js-scrollTo">A propos</a></li>
               <li> <a href="#footer" class="  font js-scrollTo">Contact</a></li>
@@ -44,7 +44,7 @@
                 <li> <a href="#footer" class="  font js-scrollTo">Contact</a></li>
                 <li><a class='font dropdown-button' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Style<i class="material-icons bt">arrow_drop_down</i></a></li>
                 <li> <a class="font" href="http://franz.ovh/cv%20site/">CV</a></li>
-            </ul></a>
+            </ul>
             <!-- Dropdown Structure -->
             <ul id='feature-dropdown' class='dropdown-content'>
                 <li><a id="bleu">Bleu</a></li>
@@ -292,12 +292,8 @@
     <script src="https://cdn.jsdelivr.net/foundation/6.2.4/js/foundation.reveal.js"></script>
         <script type="text/javascript">
         $(document).foundation();
-        breakpoint : function () {
-  return matchMedia(Foundation.media_queries['medium']).matches || matchMedia(Foundation.media_queries['small']).matches;
-},
-//         breakpoint : function () {
-//   return !matchMedia(Foundation.media_queries['topbar']).matches;
-// },
+
+
         $(document).ready(function(){
           $("button").click(function(){
           $.ajax({url: "pages/contact.php", success: function(result){
