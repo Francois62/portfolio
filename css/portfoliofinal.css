@@ -1,0 +1,371 @@
+@font-face {
+  font-family: high;
+  src:url("../fonts/blue highway rg.ttf");
+}
+*{
+      font-family: high;
+}
+body {
+
+    /*font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;*/
+
+    margin: 0;
+    padding: 0;
+    background-color: rgba(96, 96, 96, 0.5)!important;
+}
+
+nav {
+    font-family: high;
+    background-color: rgba(155,194,207,0.9) !important;
+    text-shadow: 1px 1px #0078A0;
+      font-size:50px;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+.start{
+  text-align: center;
+}
+.font{
+    font-size:25px;
+}
+}
+#nav{
+  padding-left: 10%;
+  font-size:50px;
+}
+.parallax-background {
+    background-color: #0078A0;
+    height: 620px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+}
+#about{
+  border-right:solid grey 1px;
+}
+.pos{
+  padding-left: 2%;
+}
+.intro-text {
+
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.parallax-content {
+    /*max-width: 100%;*/
+    position: relative;
+    /*top: 500px;*/
+    padding: 50px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.row.wide {
+    max-width: rem-calc(1200);
+}
+
+.contact-footer {
+      box-shadow: 0 0 2em black;
+    background-color: rgba(50,50,50, 0.8);
+    padding: 3.5rem 0;
+}
+
+.contact-footer .inputs input {
+    /*border-radius: 1000px;*/
+    border: none;
+    background-color: transparent;
+    height: 3.3125rem;
+    text-align: center;
+}
+
+.contact-footer .inputs textarea {
+    /*border-radius: 30px;*/
+    background-color: lightgrey;
+    resize: none;
+    height: 8rem;
+    text-align: center;
+}
+
+.contact-footer h4 {
+  font-family: high;
+    color: #e5e5e5;   #e5e5e5
+    font-weight: 100;
+    margin-bottom: 0.25rem;
+}
+
+.contact-footer h4.phone {
+    margin-bottom: 3rem;
+}
+
+.contact-footer h4.phone:before {
+    font-family: "foundation-icons";
+    content: "\f1f8";
+    font-weight: 300;
+    padding-top: 0.2rem;
+    font-size: 2rem;
+    color: #a9a9a9;
+    padding-left: 0.5rem;
+    padding-right: 1.65rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #a9a9a9;
+}
+
+.pres {
+  padding-right: 1%;
+  text-align: justify;
+    padding-top: 2%;
+      padding-bottom: 2%;
+    box-shadow: 0 0 2em black;
+    background-color: rgba(245,245,220, 0.6);
+}
+
+@media only screen and (max-width: 40em) {
+    .contact-footer h4.phone {
+        font-size: 0.875rem;
+    }
+}
+
+.contact-footer h4.email:before {
+    font-family: "foundation-icons";
+    content: "\f16d";
+    font-weight: 300;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    color: #a9a9a9;
+    padding-left: 0.5rem;
+    padding-right: 1.55rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #a9a9a9;
+}
+
+.contact-footer h4.location:before {
+    font-family: "foundation-icons";
+    content: "\f172";
+    font-weight: 300;
+    padding-top: 0.2rem;
+    font-size: 2rem;
+    color: #a9a9a9;
+    padding-left: 0.5rem;
+    padding-right: 1.85rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #a9a9a9
+}
+
+.contact-footer p {
+    color: #a9a9a9;
+    font-weight: 100;
+    font-size: 0.875rem;
+    /*margin-bottom: 3rem;
+    margin-left: 3.5rem;*/
+}
+
+.contact-footer p.form-lead {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+
+.contact-footer p.form-lead-in {
+  font-family: high;
+    color:#e5e5e5;
+    font-weight: 300;
+    font-size: 1.6rem;
+    /*margin-bottom: 0.5rem;*/
+    /*margin-left: 0;*/
+}
+
+.contact-footer .social i {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #E87E04;
+    margin: 0;
+    display: inline;
+    padding: 4px 8px 4px 8px;
+    border: 2px solid #E87E04;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 40em) {
+    .contact-footer .social i {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.contact-footer .inline-list {
+    display: inline-flex;
+    /*margin: 0 0 0.5rem -0.3rem;*/
+}
+
+.contact-footer .inline-list>li {
+    margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 40em) {
+    .contact-footer .inline-list>li {
+        margin-bottom: 0.875rem;
+    }
+}
+.contact-footer .button {
+    background: transparent;
+    border: 2px solid #E87E04;
+    color: #a9a9a9;
+}
+
+.contact-footer .button:hover {
+    background: #E87E04;
+    border: 2px solid #a9a9a9;
+    color: #fff;
+}
+
+.portfolio {
+  font-family: high;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+    background-color: rgba(173, 216, 230);
+    box-shadow: 0 0 2em black;
+}
+
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+.title{
+  font-family: high;
+  text-shadow: 1px 1px #0078A0;
+  padding-bottom: 2%;
+}
+.pict{
+    width:50%;
+  padding: 5%;
+  padding-bottom: 5%;
+}
+.totop{
+  margin-right:2%;
+  right:0;
+  bottom:0;
+  position: fixed;
+
+}
+.section {
+
+  padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(100, 149, 237, 0.7);
+    box-shadow: 0 0 2em black;
+}
+
+#js .highcharts-background {
+    fill: transparent !important;
+}
+
+#js .highcharts-axis-title {
+    fill: white!important;
+}
+#html-css .highcharts-background {
+    fill: transparent !important;
+}
+
+#html-css .highcharts-axis-title {
+    fill: white!important;
+    font-size: 16px;
+}
+
+#bootstrap .highcharts-background {
+    fill: transparent !important;
+}
+
+#bootstrap .highcharts-axis-title {
+    fill: white!important;
+    font-size: 16px;
+}
+
+#PHP .highcharts-background {
+    fill: transparent !important;
+}
+
+#PHP .highcharts-axis-title {
+    fill: white!important;
+    font-size: 16px;
+}
+
+#jquery .highcharts-background {
+    fill: transparent !important;
+}
+
+#jquery .highcharts-axis-title {
+    fill: white!important;
+    font-size: 16px;
+}
+
+#foundation .highcharts-background {
+    fill: transparent !important;
+}
+
+#foundation .highcharts-axis-title {
+    fill: white!important;
+    font-size: 16px;
+}
+
+#materialize .highcharts-background {
+    fill: transparent !important;
+}
+
+#materialize .highcharts-axis-title {
+    fill: white!important;
+    font-size: 16px;
+}
+
+#ajax .highcharts-background {
+    fill: transparent !important;
+}
+
+#ajax .highcharts-axis-title {
+    fill: white!important;
+    font-size: 16px;
+}
+#mysql .highcharts-background {
+    fill: transparent !important;
+}
+
+#mysql .highcharts-axis-title {
+    fill: white!important;
+    font-size: 16px;
+}
+
+.highcharts-pane {
+    stroke-width: 2px;
+    stroke: rgba(165, 171, 155, 0.5);
+    z-index: 1;
+}
+
+.footer {
+    box-shadow: 0 0 2em black;
+    background-color: rgba(96, 96, 96, 0.4);
+}
+
+.highcharts-tick {
+    stroke: transparent;
+}
+
+.highcharts-yaxis-grid .highcharts-grid-line {
+    display: none;
+}
+
+.highcharts-plot-band .highcharts-pane {
+    margin: 0px;
+}
+
+.highcharts-yaxis-labels text {
+    color: transparent !important;
+    fill: transparent !important;
+}
