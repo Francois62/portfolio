@@ -24,19 +24,7 @@
         <div id="nav"class="nav-wrapper">
             <a href="#" class="brand-logo"><i class="material-icons">camera</i>Acceuil</a>
             <!-- <a  data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i> -->
-              <div class="s-mobile-toggle button-collapse show-for-small-only">
-  					<button class="menu-icon" type="button" data-responsive-toggle="mobile-dropdown"></button>
-  				</div>
-  				<div class="s-mobile-menu-wrapper dropdown-pane" id="mobile-dropdown" data-dropdown data-close-on-click="true">
-  					<ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
-              <li> <a href="#portfolio" class=" font js-scrollTo">Projets</a></li>
-              <li> <a href="#comp" class=" font js-scrollTo">Compétences</a></li>
-              <li> <a href="#about" class=" font js-scrollTo">A propos</a></li>
-              <li> <a href="#footer" class="  font js-scrollTo">Contact</a></li>
-              <li><a class='font dropdown-button' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Style<i class="material-icons bt">arrow_drop_down</i></a></li>
-              <li> <a class="font" href="http://franz.ovh/cv%20site/">CV</a></li>
-          </ul>
-  				</div>
+  					<button class="show-for-small-only menu-icon button-collapse" type="button" data-activates="slide-out"><i class="mdi-navigation-menu"></i></button>
             <ul class="bt hide-on-med-and-down">
                 <li > <a href="#portfolio" class=" font js-scrollTo">Projets</a></li>
                 <li> <a href="#comp" class=" font js-scrollTo">Compétences</a></li>
@@ -52,8 +40,16 @@
             </ul>
           </div>
               </nav>
+              <ul id="slide-out" class="show-for-small-only side-nav">
+                <li> <a href="#portfolio" class=" font js-scrollTo">Projets</a></li>
+                <li> <a href="#comp" class=" font js-scrollTo">Compétences</a></li>
+                <li> <a href="#about" class=" font js-scrollTo">A propos</a></li>
+                <li> <a href="#footer" class="  font js-scrollTo">Contact</a></li>
+                <li><a class='font dropdown-button' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Style<i class="material-icons bt">arrow_drop_down</i></a></li>
+                <li> <a class="font" href="http://franz.ovh/cv%20site/">CV</a></li>
+              </ul>
                 <div id="hello"class="start row small-up-2 medium-up-3 large-up-4">
-                <h1>Portfolio de François Andrzejewski</h1>
+                <h1><marquee>Portfolio de François Andrzejewski</marquee></h1>
                 <div >
                     <p>Bonjour, je vous souhaite la bienvenue sur mon site.
                     </p>
@@ -62,13 +58,13 @@
                     <p>Bonne visite!</p>
                 </div>
             </div>
-    <div id="portfolio" class="row portfolio small-up-2 medium-up-3 large-up-4">
+    <div id="portfolio" class="row portfolio small-up-5 medium-up-5 large-up-5 columns">
         <h2 class="text-center title">Projets</h2>
-        <div class="large-up-6 column">
+        <div class="small-up-12 medium-up-12 large-up-12 columns">
             <img class="thumbnail" src="images/hackaton.png">
             <h5>Application Web Selfies</h5>
         </div>
-        <div class="large-up-6 column">
+        <div class="small-up-12 medium-up-12 large-up-12 columns">
             <img class="thumbnail" src="images/CAB.png">
             <h5>Application Gestion Fibre Optique</h5>
         </div>
@@ -113,12 +109,6 @@
         </div>
         <div id="ajax" class="small-3 large-3 column" style="height:150px;">
         </div>
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-
-</ul>
     </div>
     <!-- <div class="parallax-background">
 
@@ -142,10 +132,10 @@
 
             <img class="profil img-responsive center-block" src="images/moi.jpg"><br>
             <!-- </div> -->
-            <p>Cette partie du site est dedié à une presentation plus personnelle. Je m'appelle François Andrzejewski, agé de vingt-six ans, je suis né à Boulogne-sur-mer dans le Pas de Calais en France. Concernant mes competences, j'ai effectué premièrement
-                une formation de technicien reseaux via le BTS SIO pour ensuite me tourner vers le developpement web nottamment via la formation simplon recemment labelise "Grande ecole du Numerique".</p>
-            <p> J'ai trouvé un reel interêt dans la programation du fait que ce travail amène à sans cesse s'interroger sur la manière d'ameliorer un projet, le travail en équipe et la logique que ce travail implique. Je suis interessé par la musique que
-                je pratique, le cinema, le sport et la culture en general.
+            <p>Cette partie du site est dedié à une présentation plus personnelle. Je m'appelle François Andrzejewski, agé de vingt-six ans, je suis né à Boulogne-sur-mer dans le Pas de Calais en France. Concernant mes compétences, j'ai effectué premièrement
+                une formation de technicien réseaux via le BTS SIO pour ensuite me tourner vers le développement web nottamment via la formation simplon récemment labelisée "Grande ecole du Numérique".</p>
+            <p> J'ai trouvé un réel interêt dans la programation du fait que ce travail amène à sans cesse s'interroger sur la manière d'améliorer un projet, le travail en équipe et la logique que ce travail implique. Je suis interessé par la musique que
+                je pratique, le cinéma, le sport et la culture en général.
             </p>
         </div>
 
@@ -291,16 +281,19 @@
     <script src="https://cdn.jsdelivr.net/foundation/6.2.4/js/foundation.core.js"></script>
     <script src="https://cdn.jsdelivr.net/foundation/6.2.4/js/foundation.reveal.js"></script>
         <script type="text/javascript">
-        $(document).foundation();
-
-
-        $(document).ready(function(){
-          $("button").click(function(){
-          $.ajax({url: "pages/contact.php", success: function(result){
-              $("#myModal").html(result);
-          }});
-          });
-        });
+//         $('.button-collapse').sideNav({
+//     menuWidth: 150, // Default is 240
+//     edge: 'right', // Choose the horizontal origin
+//     closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+//   }
+// );
+        // $(document).ready(function(){
+        //   $("button").click(function(){
+        //   $.ajax({url: "pages/contact.php", success: function(result){
+        //       $("#myModal").html(result);
+        //   }});
+        //   });
+        // });
     $("#bleu").click(function() {
         $("body").animate({
           backgroundColor: "#0033FF",

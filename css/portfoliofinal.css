@@ -44,6 +44,9 @@ nav {
     background-size: cover;
     position: fixed;
 }
+.menu-icon{
+  padding-top: 20px;
+}
 #about{
   border-right:solid grey 1px;
 }
