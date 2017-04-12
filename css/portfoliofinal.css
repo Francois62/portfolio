@@ -198,7 +198,12 @@ nav {
     border: 2px solid #E87E04;
     border-radius: 50%;
 }
-
+/*.orbit{
+  width:100%;
+}*/
+.orbit-container{
+  width:100%;
+}
 @media only screen and (max-width: 40em) {
     .contact-footer .social i {
         font-size: 2rem;
@@ -258,6 +263,7 @@ nav {
   right:0;
   bottom:0;
   position: fixed;
+  padding-bottom: 1%;
 
 }
 .section {
